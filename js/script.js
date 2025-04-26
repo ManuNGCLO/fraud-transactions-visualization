@@ -5,6 +5,7 @@ d3.csv("data/creditcard.csv").then(data => { data.forEach(d => {
     d.Time = +d.Time;
   });
 
+  //
   // ========== GRÁFICO 1: Barras Fraudes vs Legítimas ==========
   const counts = d3.rollup(data, v => v.length, d => d.Class);
   const chartData = Array.from(counts, ([key, value]) => ({
