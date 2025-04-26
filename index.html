@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detección de Fraudes Bancarios</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h1>Análisis Visual del Fraude en Transacciones</h1>
+
+    <div class="chart-container">
+      <h2>Gráfico 1: Proporción de Transacciones Legítimas vs. Fraudulentas</h2>
+      <div id="chart1"></div>
+    </div>
+    <div class="conclusion">
+      <strong>Conclusión:</strong> La primera visualización pone de manifiesto una marcada desproporción entre las transacciones legítimas y las fraudulentas, siendo estas últimas apenas el 0.17% del total. Aunque su volumen es bajo, su impacto potencial en la seguridad financiera es significativo. Este hallazgo evidencia la necesidad de métodos de análisis capaces de identificar patrones mínimos, priorizando la sensibilidad del modelo ante eventos atípicos.
+    </div>
+  
+    <div class="chart-container">
+      <h2>Gráfico 2: Distribución de Fraudes por Rango de Monto</h2>
+      <div id="chart2"></div>
+    </div>
+    <div class="conclusion">
+      <strong>Conclusión:</strong> La segunda gráfica revela una concentración de fraudes en transacciones de bajo valor, especialmente por debajo de $125. Este comportamiento sugiere una posible estrategia deliberada de los atacantes para ejecutar transacciones de bajo valor con mayor frecuencia, posiblemente con el objetivo de evadir los sistemas tradicionales de detección. Este patrón plantea la necesidad de fortalecer los filtros para operaciones pequeñas, ya que pueden acumular un impacto financiero considerable si no son controladas a tiempo.
+    </div>
+  
+    <div class="chart-container">
+      <h2>Gráfico 3: Evolución Temporal de Fraudes</h2>
+      <div id="chart3"></div>
+    </div>
+    <div class="conclusion">
+      <strong>Conclusión:</strong> El análisis temporal de las transacciones fraudulentas revela picos de actividad concentrada en ciertos periodos. Estos eventos podrían responder a intentos de ataques automatizados o comportamientos coordinados. La variabilidad observada sugiere que el monitoreo continuo debe incorporar análisis por intervalos, permitiendo detectar no solo la frecuencia del fraude, sino su intensidad y sincronía en el tiempo.
+    </div>
+
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
